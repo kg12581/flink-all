@@ -3,6 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/flink-cdc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-cdc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-doris/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-doris/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-hive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-hive/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-kafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-mysql/src/main/java" charset="UTF-8" />

@@ -17,6 +17,8 @@
         <module>transformation-etl</module>
         <module>flink-cdc</module>
         <module>flink-paimon</module>
+        <module>flink-hive</module>
+        <module>flink-doris</module>
     </modules>
 
     <properties>
