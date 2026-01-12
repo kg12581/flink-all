@@ -19,6 +19,8 @@
         <module>flink-paimon</module>
         <module>flink-hive</module>
         <module>flink-doris</module>
+        <module>flink-hdfs</module>
+        <module>flink-clickHouse</module>
     </modules>
 
 
