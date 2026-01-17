@@ -25,51 +25,117 @@
     </properties>
 
     <dependencies>
-        <!--        flink-->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-java</artifactId>
-            <version>1.13.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.11</artifactId>
-            <version>1.13.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-clients_2.11</artifactId>
-            <version>1.13.6</version>
-        </dependency>
 
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-api-scala-bridge_2.11</artifactId>
-            <version>1.13.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-planner_2.11</artifactId>
-            <version>1.13.6</version>
-        </dependency>
 
-        <!--        flink cdc d-->
+
+        <!-- Flink CDC PostgreSQL 连接器 -->
         <dependency>
             <groupId>com.ververica</groupId>
-            <!-- add the dependency matching your database -->
-            <artifactId>flink-connector-mysql-cdc</artifactId>
-            <!-- The dependency is available only for stable releases, SNAPSHOT dependency need build by yourself. -->
-            <version>2.2.0</version>
+            <artifactId>flink-connector-postgres-cdc</artifactId>
+            <version>2.3.0</version>
         </dependency>
-        <!--        doris-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-connector-postgres-cdc</artifactId>-->
+<!--            <version>2.3.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-sql-connector-postgres-cdc</artifactId>-->
+<!--            <version>3.5.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.ververica</groupId>-->
+<!--            <artifactId>flink-connector-postgres-cdc</artifactId>-->
+<!--            <version>3.2.0</version> &lt;!&ndash; 对应 Flink 1.17.x &ndash;&gt;-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.ververica</groupId>-->
+<!--            <artifactId>flink-connector-debezium</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>org.apache.doris</groupId>
-            <!--            <artifactId>flink-doris-connector-1.14_2.12</artifactId>-->
-            <artifactId>flink-doris-connector-1.13_2.12</artifactId>
-            <!--artifactId>flink-doris-connector-1.12_2.12</artifactId-->
-            <!--            artifactId>flink-doris-connector-1.11_2.12</artifactId-->
-            <version>1.0.3</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.ververica</groupId>
+            <artifactId>flink-connector-debezium</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <!-- Flink CDC Postgres Source -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-cdc-connectors-postgres</artifactId>-->
+<!--            <version>3.5.0</version>-->
+<!--        </dependency>-->
+
+        <!-- Flink CDC Base -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-cdc-base</artifactId>-->
+<!--            <version>3.5.0</version>-->
+<!--        </dependency>-->
+
+
+        <!-- Debezium JSON 序列化 -->
+<!--        <dependency>-->
+<!--            <groupId>com.ververica</groupId>-->
+<!--            <artifactId>flink-debezium-json</artifactId>-->
+<!--            <version>2.4.0</version>-->
+<!--        </dependency>-->
+
+
+        <!--        flink-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-java</artifactId>-->
+<!--            <version>1.13.6</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-streaming-java_2.11</artifactId>-->
+<!--            <version>1.13.6</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-clients_2.11</artifactId>-->
+<!--            <version>1.13.6</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-table-api-scala-bridge_2.11</artifactId>-->
+<!--            <version>1.13.6</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-table-planner_2.11</artifactId>-->
+<!--            <version>1.13.6</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.ververica</groupId>
+            <artifactId>flink-connector-mysql-cdc</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+<!--        &lt;!&ndash;        doris&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.doris</groupId>-->
+<!--            &lt;!&ndash;            <artifactId>flink-doris-connector-1.14_2.12</artifactId>&ndash;&gt;-->
+<!--            <artifactId>flink-doris-connector-1.13_2.12</artifactId>-->
+<!--            &lt;!&ndash;artifactId>flink-doris-connector-1.12_2.12</artifactId&ndash;&gt;-->
+<!--            &lt;!&ndash;            artifactId>flink-doris-connector-1.11_2.12</artifactId&ndash;&gt;-->
+<!--            <version>1.0.3</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-shaded-guava30</artifactId>-->
+<!--            <version>30.1-jre-2.12-1.16.0</version>-->
+<!--        </dependency>-->
 
 
         <dependency>
