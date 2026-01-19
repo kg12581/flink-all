@@ -21,9 +21,9 @@
         <module>flink-doris</module>
         <module>flink-hdfs</module>
         <module>flink-clickHouse</module>
-        <module>flink-odps</module>
-        <module>flink-mongodb</module>
         <module>flink-elasticsearch</module>
+        <module>flink-mongodb</module>
+        <module>flink-odps</module>
     </modules>
 
 
