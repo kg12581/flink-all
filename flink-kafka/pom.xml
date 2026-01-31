@@ -30,6 +30,24 @@
             <artifactId>flink-connector-kafka</artifactId>
             <version>1.17.0</version>
         </dependency>
+        <!-- Kafka Source/Sink (包含 Upsert) -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka</artifactId>
+            <version>3.0.2-1.17</version>
+        </dependency>
+        <!-- SQL / Table Kafka（Upsert Kafka 靠它） -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-sql-connector-kafka</artifactId>
+            <version>3.1.0-1.17</version>
+        </dependency>
+        <!-- Flink JSON Format Support -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-json</artifactId>
+            <version>1.17.0</version> <!-- 必须与你的 Flink 版本一致 -->
+        </dependency>
 
     </dependencies>
 
