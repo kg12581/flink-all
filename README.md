@@ -10,4 +10,7 @@ mysql+flink-cdc+kafka+paimon
 postgresql+flink-cdc+kafka+paimon
 
 
+维表join
+用java集合map
+
 

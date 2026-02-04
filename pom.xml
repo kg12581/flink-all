@@ -24,6 +24,7 @@
         <module>flink-elasticsearch</module>
         <module>flink-mongodb</module>
         <module>flink-odps</module>
+        <module>flink-hbase</module>
     </modules>
 
 
