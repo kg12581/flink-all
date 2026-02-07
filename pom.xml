@@ -164,14 +164,20 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>apache-snapshots</id>
-            <name>apache snapshots</name>
-            <url>https://repository.apache.org/content/repositories/snapshots/</url>
-            <!--<url>https://maven.aliyun.com/repository/apache-snapshots</url>-->
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>apache-snapshots</id>-->
+<!--            <name>apache snapshots</name>-->
+<!--            <url>https://repository.apache.org/content/repositories/snapshots/</url>-->
+<!--            &lt;!&ndash;<url>https://maven.aliyun.com/repository/apache-snapshots</url>&ndash;&gt;-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>central</id>-->
+<!--            <url>https://repo1.maven.org/maven2</url>-->
+<!--            <releases><enabled>true</enabled></releases>-->
+<!--            <snapshots><enabled>false</enabled></snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 
     <build>
