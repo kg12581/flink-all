@@ -1,4 +1,4 @@
-package org.example.producer;
+package org.example;
 
 public class Kafka2Mysql {
 }

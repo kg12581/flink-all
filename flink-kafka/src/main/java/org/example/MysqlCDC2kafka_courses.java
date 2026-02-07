@@ -1,4 +1,4 @@
-package org.example.consumer;
+package org.example;
 
 import com.ververica.cdc.connectors.mysql.source.MySqlSource;
 import com.ververica.cdc.connectors.mysql.table.StartupOptions;
