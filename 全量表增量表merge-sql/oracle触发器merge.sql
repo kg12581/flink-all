@@ -40,7 +40,7 @@ BEGIN
 END;
 /
 
-
+--抽取删除和修改表信息和每天增量表和全量表merge
 -- 设置动态分区（如果用分区表）
 SET hive.exec.dynamic.partition = true;
 SET hive.exec.dynamic.partition.mode = nonstrict;
